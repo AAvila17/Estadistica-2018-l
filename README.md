@@ -1,1 +1,1 @@
-Laboratorios del curso CM-254A escritos por Alex Avila Santos 
+Laboratorios del curso CM-274 escritos por Alex Avila Santos
