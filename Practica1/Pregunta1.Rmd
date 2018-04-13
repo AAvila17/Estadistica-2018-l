@@ -1,37 +1,52 @@
+---
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
 ## Practica 1
 ### Nombre : Alex Avila Santos 20160332F
 ### Pregunta1:
+
 ####Item a) El código muestra una secuencia dee valores del 5 al -11 que progresa en pasos  tamaño 0.3.
 
 ```{r}
 v <- seq(from=5,to=-11,by=-0.3)
 v
 ```
+
 ####Item b) El código muestra la sobrescritura del objeto en (a) usando  la misma secuencia con el orden invertido.
+
 ```{r}
 v <- seq(from=-11,to=5,by=0.3)
 v
 ```
-###Item c) El código muestra la repitición del vector
+
+####Item c) El código muestra la repitición del vector
 ```{r}
 c(-1,3,-5,7,-9)
 ```
-### dos veces, con cada elemento repetido 10 veces y almacena el resultado. Visualiza el resultado ordenado de mayor a menor.
+#### dos veces, con cada elemento repetido 10 veces y almacena el resultado. Visualiza el resultado ordenado de mayor a menor.
+
 ```{r}
 s <- rep (c (-1,3,-5,7,-9) , 2*10 )
 sort(s,decreasing = TRUE)
 
 ```
+
 ###Item d) El código muestra un vector con las siguientes características:
 ####Secuencia con enteros del 6 al 12 (inclusive)
 ####Repetición triple del valor 5.3
 ####El número -3
 ####Una secuencia de nueve valores que comienzan en 102 y termina en el número que es la longitud total del vector creado en (c)
+
 ```{r}
-s1 <- c(seq(from=6,to=12),rep(5.3,3),-3,seq(from=102,to=length(s),by=-1))
+s1 <- c(seq(from=6,to=12),rep(5.3,3),-3,seq(from=102,to=length(s),length.out = 9))
 s1
 ```
+
 ####Confirma que la longitud del vector creado en (d) es 20
+
 ```{r}
 length(s1)
 
